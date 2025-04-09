@@ -1,87 +1,190 @@
 body,h1,h2,h3,h4,h5,h6 {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Hind', sans-serif;
+    font-weight:normal; 
+    /* font-weight: medium; */
+    /* font-style: normal; */
   }
 
 body, html {
   height: 100%;
-  color: #777;
+  color: #000000;
   line-height: 1.8;
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: rgb(198, 224, 248);
+  background-color: #B6CDFF;
+  /* background-color: #BADAFD; */
 }
+
 
 .nav-bar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 5px 0;
     border-bottom: 2px dotted rgb(116, 113, 113);
-    font-family: 'Arial', sans-serif;
+    background-color: #B6CDFF;
+      /* background-color: #BADAFD; */
+
 }
 
 .nav-button {
     display: inline-block; /* Ensures buttons don't take full width */
-    /* background-color: rgb(246, 206, 209); */
-    color: #0c2d48;
+    font-family: 'Hind', sans-serif;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-weight: 700;
-    font-size: large;
+    font-weight: lighter;
+    font-size: 2.2vw;
     margin: 0 10px; /* Adds spacing between buttons */
 }
 
+
 .nav-button:hover {
-    color: darkblue;
+    background-color: #BADAFD;
+    opacity: 80%;
+    border-radius: 15px;
 }
 
-.header-img {
-    /* background-image: url("../images/sky_blue.jpg"); */
-    background-size: cover;
-    background-position: center;
-    /* color: white; */
-    width: 100%;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .logo {
     width: 300px;
-    /* height: auto !important; */
-}
-.sect {
-    width: 80%;
-    max-width: 800px;
-    /* height: 300px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    padding: 0.01em 16px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
-.center {
-    text-align:center
+.main_header {
+    color: #000000;
+    text-align: center;
+    font-size: 4vw;
+    padding: 4vw;
+    padding-bottom: 10vw;
+
+    
 }
+
+.sect {
+    align-items: center;
+    text-align: center;
+    padding: 4vw;
+    padding-bottom: 10vw;
+    color: #000000;
+    line-height: 2.8;
+}
+
+.tab-header {
+    /* background-color: #BADAFD; */
+    background-color: rgb(169, 175, 227);
+    opacity: 50%;
+    padding: 2vw;
+    align-items: center;
+    text-align: center;
+    font-family: 'JejuGothic', sans-serif;
+    font-weight:normal; 
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+
+}
+
+.about-sect {
+    align-items: center;
+    text-align: center;
+    padding: 4vw;
+    /* padding-top: 10vw; */
+    color: #000000;
+    line-height: 2.3;
+}
+
+.about-blurb {
+    text-align: left;
+    padding: 2vw;
+
+}
+
+.photo-container {
+    padding: 4vw;
+    text-align: center;
+    /* padding-bottom: 6vw; */
+}
+
+.photo-row {
+    display: flex;
+    /* justify-content: center;  */
+    padding-top: 5vw;
+    padding-bottom: 10vw;
+    gap: 8vw; /* Spacing between images */
+    flex-wrap: wrap; /* Wrap to the next row if needed */
+}
+
+
+.photo-row img {
+    width: 15vw; /* Adjust size as needed */
+    height: 15vw;
+    object-fit: cover; /* Crop images nicely */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+
+.photo-text h5 {
+    margin:2px;
+    min-height: 2vw;
+}
+
+.info-block {
+    margin-bottom: auto; /* pushes following elements (like the button) down */
+  }
+
+.bio-text {
+    display: none; /* hidden by default */
+    margin-top: 1em;
+    text-align: left;
+    font-size: 1vw;
+    color: #444;
+    background-color: #cbdaff;
+    padding: 2vw;
+    border-radius: 15px;
+  }
+  
+  .bio-toggle {
+    margin-top: 1em;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .bio-toggle:hover {
+    background-color: #e0e0e0;
+  }
+
+
+
+.guided-q {
+    padding:5vw;
+    list-style-type: none;
+}
+
+.guided-q li {
+    padding: 2vw;
+    font-size: 1.4vw;
+    /* border-bottom: 1px solid #ddd; */
+    /* font-family: sans-serif; */
+  }
+
+
 
 
 .footer {
-    background-color: rgb(43, 47, 84);
+    background-color: rgb(132, 140, 214);
     color: white;
     text-align: center;
     height: 100px;
     width: 100%;
   }
 
-  .footer-socials {
+  /* .footer-socials {
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -98,4 +201,4 @@ body, html {
 .footer-socials a:hover {
     transform: scale(1.1);
     color: #00bcd4;
-}
+} */
